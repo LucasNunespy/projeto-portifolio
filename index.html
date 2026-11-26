@@ -1,213 +1,574 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Lucas Nunes</title>
+
+    <title>Portfólio Lucas Nunes</title>
 
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
     <script src="https://kit.fontawesome.com/60565ebb5e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+<!-- ================= MENU ================= -->
+
 <header>
     <nav id="menu">
         <ul>
-            <li><a href="#video" class="link"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
-            <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
-            <li><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></li>
-            <li><a href="#" class="link" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
+            <li>
+                <a href="#ficha" class="link">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills" class="link">
+                    <i class="fa-solid fa-brain"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#formacao" class="link">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#projetos" class="link">
+                    <i class="fa-solid fa-trowel-bricks"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" class="link" id="botao-tema">
+                    <i class="fa-solid fa-moon"></i>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
 
 <main>
 
-    <!-- ================= FICHA ================= -->
+    <!-- ================= PERFIL PROFISSIONAL ================= -->
+
     <section id="ficha">
-        <img src="imagens/lucas-perfil.jpg" alt="Lucas Nunes" class="foto">
+
+        <img
+            src="imagens/lucas-perfil.jpg"
+            alt="Lucas Nunes"
+            class="foto"
+        >
 
         <h1>Lucas Nunes</h1>
 
         <p>
-            Desenvolvedor backend focado em Python e Flask, atualmente cursando Engenharia de Software.
-            Criador do AvisaCliente, um sistema web que permite a lojistas cadastrar clientes e enviar
-            promoções e avisos por email de forma simples e rápida.
-            Experiência com Python, Flask, MySQL e desenvolvimento de aplicações web para pequenos negócios.
-            Busco oportunidades na área de desenvolvimento backend para aplicar e evoluir minhas habilidades
-            na criação de sistemas reais.
+            Estudante de Engenharia de Software e desenvolvedor com foco
+            em Backend Python, dedicado à construção de aplicações web,
+            APIs REST e sistemas integrados a bancos de dados relacionais.
+        </p>
+
+        <br>
+
+        <p>
+            Possuo experiência prática com Python, Flask, MySQL e SQLAlchemy,
+            aplicando conceitos de arquitetura de software, autenticação,
+            modelagem de dados, separação de responsabilidades e implementação
+            de regras de negócio.
+        </p>
+
+        <br>
+
+        <p>
+            Atualmente, desenvolvo o Log 20, um sistema de gestão logística
+            que conecta tecnologia às necessidades reais de uma operação,
+            automatizando processos e transformando dados em indicadores
+            de desempenho.
+        </p>
+
+        <br>
+
+        <p>
+            Busco minha primeira oportunidade profissional como desenvolvedor
+            backend, com foco em evolução técnica, qualidade de código e
+            desenvolvimento de soluções que gerem valor para o negócio.
         </p>
 
         <div id="social">
-            <a href="https://www.linkedin.com/in/lucas-nunes-1b026b2b5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/lucasnunes78434-jpg" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.youtube.com/@lucasnunes78434" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.instagram.com/lucas_n.unes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://www.linkedin.com/in/lucas-nunes-1b026b2b5/"
+               target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/lucasnunespy"
+               target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@lucasnunes78434"
+               target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.instagram.com/lucas_n.unes"
+               target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
         </div>
+
     </section>
 
     <!-- ================= DETALHES ================= -->
+
     <section id="detalhes">
 
-        <!-- ================= SKILLS ================= -->
+        <!-- ================= STACK TECNOLÓGICA ================= -->
+
         <article id="skills">
-            <h2><i class="fa-solid fa-brain"></i>Minhas skills</h2>
+
+            <h2>
+                <i class="fa-solid fa-code"></i>
+                Stack tecnológica
+            </h2>
 
             <div id="skill-container">
 
-                <div class="item">
-                    <div class="info">
-                        <span class="nome"><i class="fa-solid fa-code"></i>Python</span>
-                        <span class="porcent">70%</span>
+                <!-- BACKEND -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        <i class="fa-solid fa-server"></i>
+                        Backend
+                    </h3>
+
+                    <div class="tecnologias">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>Blueprints</span>
                     </div>
-                    <div class="barra"><div class="progresso" style="width:70%;"></div></div>
+
                 </div>
 
-                <div class="item">
-                    <div class="info">
-                        <span class="nome"><i class="fa-solid fa-code"></i>MySQL</span>
-                        <span class="porcent">70%</span>
+                <!-- BANCO DE DADOS -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        <i class="fa-solid fa-database"></i>
+                        Banco de dados e ORM
+                    </h3>
+
+                    <div class="tecnologias">
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                        <span>SQLAlchemy</span>
+                        <span>Flask-SQLAlchemy</span>
                     </div>
-                    <div class="barra"><div class="progresso" style="width:70%;"></div></div>
+
                 </div>
 
-                <div class="item">
-                    <div class="info">
-                        <span class="nome"><i class="fa-solid fa-code"></i>Flask</span>
-                        <span class="porcent">75%</span>
+                <!-- FRONTEND -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        Frontend
+                    </h3>
+
+                    <div class="tecnologias">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Jinja2</span>
+                        <span>JavaScript</span>
+                        <span>DOM</span>
+                        <span>Fetch API</span>
                     </div>
-                    <div class="barra"><div class="progresso" style="width:75%;"></div></div>
+
                 </div>
 
-                <div class="item">
-                    <div class="info">
-                        <span class="nome"><i class="fa-solid fa-code"></i>HTML5</span>
-                        <span class="porcent">70%</span>
+                <!-- APIs -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        <i class="fa-solid fa-network-wired"></i>
+                        APIs e integração
+                    </h3>
+
+                    <div class="tecnologias">
+                        <span>APIs REST</span>
+                        <span>HTTP</span>
+                        <span>JSON</span>
                     </div>
-                    <div class="barra"><div class="progresso" style="width:70%;"></div></div>
+
                 </div>
 
-                <div class="item">
-                    <div class="info">
-                        <span class="nome"><i class="fa-solid fa-code"></i>CSS3</span>
-                        <span class="porcent">65%</span>
+                <!-- AUTENTICAÇÃO -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        <i class="fa-solid fa-shield-halved"></i>
+                        Autenticação e segurança
+                    </h3>
+
+                    <div class="tecnologias">
+                        <span>JWT</span>
+                        <span>bcrypt</span>
                     </div>
-                    <div class="barra"><div class="progresso" style="width:65%;"></div></div>
+
                 </div>
 
-                <div class="item">
-                    <div class="info">
-                        <span class="nome"><i class="fa-solid fa-code"></i>Git & GitHub</span>
-                        <span class="porcent">70%</span>
+                <!-- FERRAMENTAS -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        <i class="fa-solid fa-code-branch"></i>
+                        Versionamento e ferramentas
+                    </h3>
+
+                    <div class="tecnologias">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Postman</span>
+                        <span>VS Code</span>
+                        <span>MySQL Workbench</span>
                     </div>
-                    <div class="barra"><div class="progresso" style="width:70%;"></div></div>
+
+                </div>
+
+                <!-- EM FORMAÇÃO -->
+
+                <div class="skill-card em-formacao">
+
+                    <h3>
+                        <i class="fa-brands fa-docker"></i>
+                        Em formação
+                    </h3>
+
+                    <div class="tecnologias">
+                        <span>Docker</span>
+                    </div>
+
                 </div>
 
             </div>
+
         </article>
 
         <!-- ================= FORMAÇÃO ================= -->
+
         <article id="formacao">
-            <h2><i class="fa-solid fa-graduation-cap"></i>Formação</h2>
+
+            <h2>
+                <i class="fa-solid fa-graduation-cap"></i>
+                Formação
+            </h2>
 
             <div id="formacao-container">
+
                 <div class="curso">
+
                     <p class="periodo">2022-2024</p>
-                    <h3 class="instituicao">Escola Técnica ESSEI</h3>
-                    <p class="titulacao">Técnico em Administração</p>
+
+                    <h3 class="instituicao">
+                        Escola Técnica ESSEI
+                    </h3>
+
+                    <p class="titulacao">
+                        Técnico em Administração
+                    </p>
+
                 </div>
 
                 <div class="curso">
-                    <p class="periodo">2025</p>
-                    <h3 class="instituicao">Unipar</h3>
-                    <p class="titulacao">Engenharia de Software (em andamento)</p>
+
+                    <p class="periodo">2025 - Atualmente</p>
+
+                    <h3 class="instituicao">
+                        Unipar
+                    </h3>
+
+                    <p class="titulacao">
+                        Engenharia de Software (em andamento)
+                    </p>
+
                 </div>
+
             </div>
+
         </article>
 
         <!-- ================= PROJETOS ================= -->
+
         <article id="projetos">
-            <h2><i class="fa-solid fa-trowel-bricks"></i>Meus Projetos</h2>
+
+            <h2>
+                <i class="fa-solid fa-trowel-bricks"></i>
+                Meus Projetos
+            </h2>
 
             <div id="projeto-container">
 
-                <!-- AvisaCliente -->
+                <!-- ================= AVISACLIENTE ================= -->
+
                 <div class="projeto">
-                    <img src="imagens/avisacliente-dashboard.jpg" alt="AvisaCliente" class="foto">
+
+                    <img
+                        src="imagens/avisacliente-dashboard.jpg"
+                        alt="Sistema AvisaCliente"
+                        class="foto"
+                    >
 
                     <div class="projeto-info">
+
                         <p class="periodo">2026</p>
-                        <h3 class="titulo">Projeto AvisaCliente</h3>
+
+                        <h3 class="titulo">
+                            Projeto AvisaCliente
+                        </h3>
 
                         <p>
-                            Sistema web que permite a lojistas enviar promoções e avisos por email com imagem
-                            para todos os clientes cadastrados de uma única vez.
+                            Sistema web que permite a lojistas enviar
+                            promoções e avisos por email com imagem
+                            para todos os clientes cadastrados de
+                            uma única vez.
                         </p>
 
                         <details class="descricao">
+
                             <summary>Saiba mais...</summary>
+
                             <p>
-                                O AvisaCliente é uma aplicação web desenvolvida para pequenos lojistas que desejam
-                                manter contato com seus clientes de forma simples. O sistema permite cadastrar emails
-                                e realizar envio em massa de mensagens promocionais com imagem para toda a base.
+                                O AvisaCliente é uma aplicação web
+                                desenvolvida para pequenos lojistas
+                                que desejam manter contato com seus
+                                clientes de forma simples.
                             </p>
+
                             <p>
-                                Desenvolvido utilizando Python, Flask e MySQL, com foco em praticidade e
-                                comunicação direta com clientes.
+                                O sistema permite cadastrar emails e
+                                realizar envio em massa de mensagens
+                                promocionais com imagem para toda
+                                a base de clientes.
                             </p>
+
+                            <p>
+                                <strong>Tecnologias:</strong>
+                                Python, Flask, MySQL, HTML e CSS.
+                            </p>
+
                         </details>
+
                     </div>
+
                 </div>
 
-                <!-- MINI ERP -->
+                <!-- ================= MINI ERP ================= -->
+
                 <div class="projeto">
-                    <img src="imagens/mini_erp.jpg" alt="Mini ERP" class="foto">
+
+                    <img
+                        src="imagens/mini_erp.jpg"
+                        alt="Mini ERP de Vendas"
+                        class="foto"
+                    >
 
                     <div class="projeto-info">
+
                         <p class="periodo">2026</p>
-                        <h3 class="titulo">Mini ERP de Vendas</h3>
+
+                        <h3 class="titulo">
+                            Mini ERP de Vendas
+                        </h3>
 
                         <p>
-                            Sistema web desenvolvido com foco na implementação completa de operações CRUD
-                            (Create, Read, Update e Delete) aplicadas à gestão de clientes, produtos e pedidos.
+                            Sistema web desenvolvido com foco na
+                            implementação completa de operações CRUD
+                            (Create, Read, Update e Delete) aplicadas
+                            à gestão de clientes, produtos e pedidos.
                         </p>
 
                         <details class="descricao">
+
                             <summary>Saiba mais...</summary>
 
                             <p>
-                                Projeto criado para consolidar conhecimentos de backend através da construção
-                                de um Mini ERP funcional, permitindo cadastro, consulta, edição e exclusão
-                                de dados em múltiplas entidades relacionadas.
+                                Projeto criado para consolidar
+                                conhecimentos de backend através
+                                da construção de um Mini ERP funcional,
+                                permitindo cadastro, consulta, edição
+                                e exclusão de dados em múltiplas
+                                entidades relacionadas.
                             </p>
 
                             <p>
-                                Implementa relacionamento entre tabelas no MySQL e controle de pedidos com
-                                múltiplos itens, incluindo cálculo automático de totais e persistência no banco.
+                                Implementa relacionamento entre
+                                tabelas no MySQL e controle de pedidos
+                                com múltiplos itens, incluindo cálculo
+                                automático de totais e persistência
+                                no banco de dados.
                             </p>
 
                             <p>
-                                Desenvolvido com Python, Flask, MySQL, HTML e CSS, seguindo arquitetura
-                                organizada em rotas, modelos e templates.
+                                Arquitetura organizada em rotas,
+                                modelos e templates.
                             </p>
+
+                            <p>
+                                <strong>Tecnologias:</strong>
+                                Python, Flask, MySQL, HTML e CSS.
+                            </p>
+
                         </details>
+
                     </div>
+
+                </div>
+
+                <!-- ================= LOG 20 ================= -->
+
+                <div class="projeto">
+
+                    <div class="projeto-info">
+
+                        <p class="periodo">
+                            2026 | Em desenvolvimento
+                        </p>
+
+                        <h3 class="titulo">
+                            Log 20 — Sistema de Gestão Logística
+                        </h3>
+
+                        <p>
+                            Sistema web voltado à gestão e ao
+                            monitoramento de operações logísticas,
+                            desenvolvido para centralizar informações,
+                            automatizar processos e acompanhar
+                            indicadores de desempenho operacional.
+                        </p>
+
+                        <details class="descricao">
+
+                            <summary>Saiba mais...</summary>
+
+                            <p>
+                                O Log 20 surgiu da necessidade de
+                                solucionar problemas reais relacionados
+                                ao monitoramento de entregas, gestão
+                                de equipes e análise de dados logísticos.
+                            </p>
+
+                            <p>
+                                O sistema transforma arquivos
+                                operacionais em informações estruturadas,
+                                permitindo consultas históricas e
+                                acompanhamento de indicadores para
+                                apoiar a tomada de decisões.
+                            </p>
+
+                            <p>
+                                <strong>Funcionalidades implementadas:</strong>
+                            </p>
+
+                            <p>
+                                • Autenticação de usuários com JWT e bcrypt.
+                                <br>
+                                • Cadastro e gerenciamento de motoristas.
+                                <br>
+                                • Importação e processamento de arquivos CSV.
+                                <br>
+                                • Modelagem e persistência de dados relacionais.
+                                <br>
+                                • Indicadores de desempenho operacional.
+                                <br>
+                                • Monitoramento de perdas de jornada.
+                                <br>
+                                • Ranking de perdas de jornada por motorista.
+                                <br>
+                                • Consultas e filtros por período.
+                                <br>
+                                • Integração entre frontend e backend.
+                            </p>
+
+                            <p>
+                                <strong>Arquitetura:</strong>
+                            </p>
+
+                            <p>
+                                Aplicação modular utilizando Flask
+                                Blueprints, com separação de
+                                responsabilidades entre rotas,
+                                services, models e templates.
+                            </p>
+
+                            <p>
+                                <strong>Tecnologias:</strong>
+                            </p>
+
+                            <div class="tecnologias">
+
+                                <span>Python</span>
+                                <span>Flask</span>
+                                <span>Blueprints</span>
+                                <span>MySQL</span>
+                                <span>SQLAlchemy</span>
+                                <span>Flask-SQLAlchemy</span>
+                                <span>APIs REST</span>
+                                <span>HTTP</span>
+                                <span>JSON</span>
+                                <span>JWT</span>
+                                <span>bcrypt</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Jinja2</span>
+                                <span>JavaScript</span>
+                                <span>Fetch API</span>
+                                <span>Git</span>
+                                <span>GitHub</span>
+                                <span>Postman</span>
+
+                            </div>
+
+                            <p>
+                                <strong>Status:</strong>
+                                Projeto em desenvolvimento contínuo,
+                                com evolução das funcionalidades
+                                conforme os requisitos operacionais.
+                            </p>
+
+                        </details>
+
+                    </div>
+
                 </div>
 
             </div>
+
         </article>
 
     </section>
+
 </main>
 
+<!-- ================= RODAPÉ ================= -->
+
 <footer>
-    Portfólio desenvolvido por Lucas Nunes em 2025.
+    Portfólio desenvolvido por Lucas Nunes | 2026
 </footer>
 
 <script src="scripts/script.js"></script>
 
 </body>
 </html>
+git status
